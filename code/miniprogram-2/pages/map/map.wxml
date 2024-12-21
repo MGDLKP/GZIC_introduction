@@ -1,0 +1,32 @@
+<!-- //map.wxml -->
+<view class="page_container">
+  <!-- 搜索框 -->
+  <view class="search_container">
+    <view class="search_icon" bindtap="search_list"></view>
+    <input class="search_input" placeholder="Placeholder" type="text" bindinput="handleInputChange" confirm-type="search" bindconfirm="search_list"/>
+  </view>
+
+  <!-- 地图容器 -->
+  <view class="map_container">
+    <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" show-location="true" markers="{{markers}}" bindmarkertap="makertap"></map>
+  </view>
+
+  <!-- 底部导航栏 -->
+  <view class="bottom_nav">
+    <view class="nav_item left" bindtap="goToBuildingsPage">
+      <image class="icon" src="../../images/building.svg"></image>
+      <text>校园建筑</text>
+    </view>
+    
+    <view class="nav_circle">
+      <view class="nav_circle_middle">
+          <image class="icon" src="path/to/map_icon.png" />    
+      </view>
+    </view>
+
+    <view class="nav_item right" bindtap="goToCamera">
+      <image class="icon" src="../../images/camera.svg" />
+      <text>拍照识别</text>
+    </view>
+  </view>
+</view>

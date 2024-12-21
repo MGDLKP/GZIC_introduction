@@ -1,0 +1,98 @@
+/* General Styles */
+.page_container {
+  position: relative;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  background-color: rgb(233, 76, 36);
+}
+
+.small_map_container {
+  /* flex: 1; */
+  /* box-sizing: border-box; */
+  top:10%;
+  width: 100%;
+  height: 40%;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  /* z-index: 10; */
+}
+
+.small_map {
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Return Button */
+.return-button {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  z-index: 9999;
+}
+.back-icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* Info Panel */
+.info-panel {
+  position: relative;
+  top: 7%;
+  height: 53%;
+  width: 100%;
+  background-color: #ffffff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+  /* padding: 30px; */
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.arrow_up_icon{
+  width: 36px;
+  height: 36px;
+  left: 45%;
+}
+
+/* Building Name */
+.building-name {
+  top: 0%;
+  left: 5%;
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Image Carousel */
+.image-carousel {
+  top:1%;
+  height: 40%;
+  margin-bottom: 10px;
+}
+.carousel-image {
+  width: 80%;
+  height: 100%;
+  left: 10.5%;
+  border-radius: 10px;
+}
+
+/* Summary Text */
+.building-summary {
+  position: relative; /* 确保子元素定位正常 */
+  width: 90%;
+  height: 150px; /* 设置一个适合展示的高度，避免内容过长 */
+  align-self: center;
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  overflow-y: scroll; /* 允许垂直滚动 */
+  word-break: break-word;
+  padding: 10px; /* 增加内边距以便于阅读 */
+  box-sizing: border-box; /* 确保 padding 不影响实际高度 */
+}

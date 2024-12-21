@@ -1,0 +1,78 @@
+{
+    "0": {
+        "uuid": "bb2e30f1-0a71-414b-b2f6-870877452c67",
+        "name": "D1\u5434\u8d24\u94ed\u667a\u80fd\u5de5\u7a0b\u5b66\u9662"
+    },
+    "1": {
+        "uuid": "d27e2905-cc75-4456-b0a8-f8898c6eca0a",
+        "name": "E3\u56fe\u4e66\u9986"
+    },
+    "2": {
+        "uuid": "bacdf7b2-5ecc-470a-8f8b-282650150d7d",
+        "name": "\u7ea2\u8272\u7532\u5de5\u96d5\u5851"
+    },
+    "3": {
+        "uuid": "c2099732-1e32-455e-b1df-cf49a3a3d930",
+        "name": "E5\u53cc\u521b\u4e2d\u5fc3"
+    },
+    "4": {
+        "uuid": "355a20a7-651f-4f4a-b92c-cb07bc3cc3ee",
+        "name": "F3\u516c\u5171\u6559\u5b66\u697c"
+    },
+    "5": {
+        "uuid": "c30464d7-ee03-4cfd-9543-6e5a83e5797b",
+        "name": "\u5317\u95e8"
+    },
+    "6": {
+        "uuid": "0b54545a-e443-4d03-9798-7d2e827764c7",
+        "name": "\u6e56\u6ee8\u5267\u573a"
+    },
+    "7": {
+        "uuid": "beef53b9-e5ce-466c-b1a2-323f0c9d2fa0",
+        "name": "\u6e56\u6ee8\u51c9\u4ead"
+    },
+    "8": {
+        "uuid": "beef53b9-e5ce-466c-b1a2-323f0c9d2fa0",
+        "name": "D6\u4f53\u80b2\u9986"
+    },
+    "9": {
+        "uuid": "d27f8c08-7f3d-4dd4-9215-d2559ec93b0a",
+        "name": "\u6587\u5370\u6865"
+    },
+    "10": {
+        "uuid": "00c71676-1488-48bb-9881-ae863cd73b83",
+        "name": "B1c/B1b\u672a\u6765\u6280\u672f\u5b66\u9662"
+    },
+    "11": {
+        "uuid": "21accae3-d211-4913-ba7f-1b9c8b6bb94c",
+        "name": "B1e/B1d\u5fae\u7535\u5b50\u5b66\u9662"
+    },
+    "13": {
+        "uuid": "5960aaaf-175f-425a-8587-2695b64a76cf",
+        "name": "C1\u524d\u6cbf\u8f6f\u7269\u8d28\u5b66\u9662"
+    },
+    "12": {
+        "uuid": "6218ec51-2a02-4088-9534-8743b8a2be47",
+        "name": "C2\u751f\u7269\u533b\u5b66\u4e0e\u5de5\u7a0b\u5b66\u9662"
+    },
+    "14": {
+        "uuid": "917a54a4-50c9-4d44-b33f-28ef7b4f05db",
+        "name": "D3\u5b9e\u9a8c\u697c"
+    },
+    "15": {
+        "uuid": "203b94db-a054-4d22-b6fa-cbac092c7d33",
+        "name": "\u7ea2\u5821\u4e66\u5c4b"
+    },
+    "16": {
+        "uuid": "beb573c4-285e-426d-925b-2644a976a67c",
+        "name": "\u6708\u6865"
+    },
+    "17": {
+        "uuid": "6a47f519-de1b-4715-b6ca-c42c5414828b",
+        "name": "A4\u7814\u7a76\u751f\u5bbf\u820d"
+    },
+    "41": {
+        "uuid": "6a47f519-de1b-4715-b6ca-c42c5414828b",
+        "name": "d5\u996d\u5802"
+    }
+}

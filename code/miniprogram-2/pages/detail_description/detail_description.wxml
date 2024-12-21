@@ -1,0 +1,40 @@
+<view class="page_container">
+  <view class="blank"></view>
+  <image class="campus_pic_up" src="/images/campus_up.png"></image>
+    <!-- return button -->
+    <!-- <view bindtap="goBack">
+      <img class="arrow_down_icon" src="../../images/arrow_up.svg" />
+      <text>测试</text> 
+    </view> -->
+    <!-- Title Bar -->
+    
+    <view class="title_bar">
+      <text class="title">{{buildingData.buildingName}}</text>
+    </view>
+    
+    <view class="return-button" bindtap="goBack">
+      <image src="/images/arrow_down.svg" class="back-icon"></image>
+    </view>
+    
+    
+
+    <!-- Information Display Section -->
+    <view class="info_container">
+      <!-- Image Section -->
+      <view class="image_container">
+        <swiper class="image-carousel" autoplay="false" interval="3000" circular="true">
+          <block wx:for="{{buildingData.images}}" wx:key="*this">
+            <swiper-item>
+              <image class="carousel-image" src="{{item}}" mode="aspectFill"></image>
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+
+      <!-- Text Section -->
+      <scroll-view type="list" scroll-y="true" class="text_container">{{buildingData.description}}</scroll-view>
+    </view>
+    <image class="campus_pic" src="/images/campus_back.jpg"></image>
+
+   
+</view>

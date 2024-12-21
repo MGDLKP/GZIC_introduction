@@ -1,0 +1,72 @@
+# Ultralytics YOLO 🚀, AGPL-3.0 license
+# African-wildlife dataset by Ultralytics
+# Documentation: https://docs.ultralytics.com/datasets/detect/african-wildlife/
+# Example usage: yolo train data=african-wildlife.yaml
+# parent
+# ├── ultralytics
+# └── datasets
+#     └── african-wildlife  ← downloads here (100 MB)
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: /home/ub/ZYC/ultralytics/runs/final  # dataset root dir
+train: images/train  # train images (relative to 'path') 118287 images
+val: images/test  # val images (relative to 'path') 5000 images
+test: images/val 
+
+nc: 50
+# Classes
+names:
+  0: D1bfar
+  1: D1bclose
+  2: E3south
+  3: E3east
+  4: E3west
+  5: E3westleft
+  6: E3westright
+  7: E3north
+  8: statue
+  9: E5
+  10: F3north
+  11: F3north1
+  12: F3south1
+  13: F3south
+  14: F3north2
+  15: northgate
+  16: northgate1
+  17: hubing
+  18: tingzi
+  19: D6
+  20: D6west
+  21: D6south
+  22: wenyinbrige
+  23: wenyinbrigeeast
+  24: E6
+  25: B1e
+  26: B1b
+  27: B1a
+  28: C1b
+  29: C1c
+  30: C2b
+  31: C2a
+  32: D3
+  33: rc
+  34: rceast
+  35: rcwest
+  36: E5south
+  37: C2aeast
+  38: C2awest
+  39: D3south
+  40: moonbrige
+  41: D3north
+  42: A4
+  43: D3north1
+  44: C3
+  45: E3
+  46: D3north2
+  47: D5south
+  48: C3north
+  49: D5 
+
+
+# Download script/URL (optional)
+download: https://github.com/ultralytics/assets/releases/download/v0.0.0/african-wildlife.zip

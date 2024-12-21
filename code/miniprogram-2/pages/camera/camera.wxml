@@ -1,0 +1,17 @@
+<!-- camera.wxml -->
+<view class="camera-page">
+  <!-- 顶部黑色区域 -->
+  <view class="top-bar">
+    <image class="icon back-icon" src="../../images/back.svg" bindtap="goBack" />
+  </view>
+
+  <!-- 相机内容区域 -->
+  <camera class="camera-view" device-position="{{devicePosition}}"  resolution="high" flash="{{flash}}" binderror="cameraError"></camera>
+
+  <!-- 底部黑色区域 -->
+  <view class="bottom-bar">
+    <image class="icon_flash" src="{{flashIcon}}" bindtap="toggleFlash" />
+    <view class="capture-button" bindtap="takePhoto"></view>
+    <image class="icon_camera" src="../../images/flip_camera.svg" bindtap="toggleCamera" />
+  </view>
+</view>

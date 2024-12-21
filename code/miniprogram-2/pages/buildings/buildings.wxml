@@ -1,0 +1,49 @@
+<view class="page-container">
+    <!-- 顶部栏 -->
+    <view class="header">
+        <view class="back-icon" bindtap="goBack"></view> <!-- 返回图标 -->
+        <text class="header-title">校园建筑</text>
+    </view>
+
+    <!-- 检索栏 -->
+    <view class="search-container">
+        <view class="search-bar">
+            <image class="search-icon" src="/images/search.svg"></image>
+            <input class="search-input" placeholder="搜索建筑" type="text" bindinput="handleInputChange" confirm-type="search" bindconfirm="search" />
+        </view>
+        <button class="clear-button" bindtap="clear">Clear</button>
+        <button class="search-button" bindtap="search">Search</button>
+    </view>
+
+    <!-- 分隔线 -->
+    <view class="divider"></view>
+
+    <!-- 展示顺序选择栏 -->
+    <view class="sort-container">
+        <view class="sort-layer-background"></view>
+        <view class="sort-layer-middle" style="left: {{sortLayerPosition}};"></view>
+        <view class="sort-layer-text">
+          <view class="sort-text" style="left: 18.5%" bindtap="sortByNumber">
+            <text>楼号</text>
+          </view>
+          <view class="sort-text" style="right: 24%" bindtap="sortByBuilding">
+            <text>功能</text>
+          </view>
+        </view>
+    </view>
+
+    <!-- 信息展示层 -->
+    <scroll-view type ="buildingList"  class="info-container" scroll-y="true" >
+        <block wx:for="{{filteredBuildingList}}" wx:key="index">
+            <view class="info-item" bindtap="navigateToDescription" data-building-id="{{item.buildingID}}">
+                <view class="image-container">
+                    <image class="building-image" src="{{item.images[0]}}" mode="aspectFill"></image>
+                </view>
+                <view class="text-container">
+                    <text class="title">{{item.buildingName}}</text>
+                    <text class="summary">{{item.summary}}</text>
+                </view>
+            </view>
+        </block>
+    </scroll-view>
+</view>

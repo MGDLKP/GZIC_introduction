@@ -1,0 +1,112 @@
+/* 页面容器 */
+.page_container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+}
+
+/* 搜索框样式 */
+.search_container {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.search_icon {
+  width: 20px;
+  height: 20px;
+  background-image: url('images/search.svg');
+  background-size: cover;
+  margin-right: 8px;
+}
+
+.search_input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #333333;
+}
+
+/* 地图容器样式 */
+.map_container {
+  flex: 1;
+  height: 80%;
+  position: relative;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+/* 底部导航栏 */
+.bottom_nav {
+  position: relative;
+  width: 100%;
+  height: 10%;
+  background-color: #ffffff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #bf6b54;
+}
+
+.nav_circle {
+  position: absolute;
+  top: -25px;
+  width: 80px;
+  height: 80px;
+  background-color: #bf6b54;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav_circle_middle {
+  width: 70px;
+  height: 70px;
+  background-color: #c77964; 
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_circle_inner{
+  width: 60px;
+  height: 60px;
+  background-color: #bf6b54; 
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}

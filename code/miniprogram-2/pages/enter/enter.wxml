@@ -1,0 +1,10 @@
+<!-- page.wxml -->
+<view class="container">
+  <!-- 图片容器 -->
+  <view class="image-container" animation="{{imageAnimation}}">
+    <image class="image" src="{{imageSrc}}" />
+  </view>
+  
+  <!-- 按钮 -->
+  <button class="btn" bindtap="onNextPage">进入下一页</button>
+</view>

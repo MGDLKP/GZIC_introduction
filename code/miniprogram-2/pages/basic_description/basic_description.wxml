@@ -1,0 +1,37 @@
+<view class="page_container">
+  <!-- Return Button (SVG Image Placeholder) -->
+  <view class="return-button" bindtap="goBack">
+    <image src="/images/return.svg" class="back-icon"></image>
+  </view>
+
+  <!-- Map Section -->
+
+  <view class="small_map_container">
+    <map class="small_map" longitude="{{longitude}}" latitude="{{latitude}}" scale="16" show-location ></map>
+  </view>
+
+  <!-- Information Display Section -->
+  <view class="info-panel">
+    <!-- Arrow Up -->
+    <!-- <view bindtap="goToDetailPage"> -->
+    <view bindtap="goToDetailPage">
+      <image class="arrow_up_icon" src="../../images/arrow_up.svg" />
+    </view>
+    
+    <!-- Building Name -->
+    <!-- <view class="building-name">{{buildingData.buildingName}}</view> -->
+    <view class="building-name">"{{buildingData.buildingName}}"</view>
+
+    <!-- Image Carousel -->
+    <swiper class="image-carousel" autoplay="false" interval="3000" circular="true">
+      <block wx:for="{{buildingData.images}}" wx:key="*this">
+        <swiper-item>
+          <image class="carousel-image" src="{{item}}" mode="aspectFill"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+
+    <!-- Summary Text -->
+    <scroll-view type="list" class="building-summary" scroll-y="true" >{{buildingData.summary}}</scroll-view>
+  </view>
+</view>

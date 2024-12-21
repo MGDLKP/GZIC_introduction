@@ -1,0 +1,145 @@
+.page_container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  /* background-color: #fff6ed; */
+  background: linear-gradient(
+    to bottom, /* 指定渐变方向为从上到下 */
+    #f6e5dd 0%, /* 起始颜色（红色） */
+    #f6e5dd 10%, /* 第一段结束颜色（橙色） */
+    #fff6ed 50% /* 最后颜色（蓝色） */
+  );
+  height:100%;
+  /* bottom: -10%; */
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  /* border-style:solid;
+  border-top: black;
+  border-top-width: 1px; */
+  box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.2);
+  align-self: center;
+}
+
+.blank{
+  background-color: white;
+  height: 80px;
+  width: 180%;
+  top: -2%;
+  left: -5%;
+  z-index: 9999;
+}
+
+/* .inner_page_container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: blue; 
+} */
+/* .arrow_down_icon_container{
+  left: 45%;
+  width: 36px;
+  height: 36px;
+  z-index: 9999;
+  background-color: rgb(151, 30, 30);
+} */
+/* .arrow_down_icon{
+  width: 36px;
+  height: 36px;
+  left: 45%;
+  background-color: aqua;
+} */
+
+.return-button {
+  position: absolute;
+  top: 5px;
+  left: 48%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.back-icon {
+  top: 160%;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+
+.title_bar {
+  top: -8%;
+  /* background-color: #f5e4da; */
+  padding: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 50px;
+  color: #9c404a;
+}
+
+.title{
+  /* left: 3%; */
+}
+
+.info_container {
+  top: -8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  background-color: #fff6ed;
+}
+
+.image_container {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.image-carousel {
+  width: 100%;
+  height: 200px;
+}
+
+.carousel-image {
+  left: 10px;
+  width: 95%;
+  height: 100%;
+  
+  border-radius: 20px;
+}
+
+.text_container {
+  top: 10%;
+  width: 90%;
+  height: 262px;
+  padding: 5px;
+  overflow-y: scroll;
+  font-size: 16px;
+  color: #9c404a;
+  /* background-color: aqua; */
+  line-height: 1.5;
+}
+
+.campus_pic{
+  /* bottom: 0%; */
+  left: -3%;
+  bottom: 1.2%;
+  height: 15%;
+  width: 120%;
+}
+
+.campus_pic_up{
+  /* bottom: 0%; */
+  left: -5%;
+  /* bottom: -2.5%; */
+  top: -3%;
+  height: 20%;
+  width: 110%;
+  /* z-index: 999; */
+}
+
+/* .summary_text {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+} */
